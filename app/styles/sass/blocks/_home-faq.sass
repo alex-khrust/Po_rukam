@@ -1,0 +1,85 @@
+.home-faq
+  width: 100%
+  height: auto
+  padding: 85px 0 120px
+  background: url(../images/dist/bg-decor.png) no-repeat center bottom 20%
+  background-size: 105%
+  .inner
+    display: flex
+    flex-flow: column
+    align-items: center
+  &__list
+    width: 100%
+    margin: 80px 0 75px
+    display: grid
+    grid-auto-flow: column
+    grid-template: 1fr 1fr / 1fr 1fr 1fr
+    justify-content: space-between
+    gap: 74px 62px
+  &__item
+    width: 100%
+    max-width: 330px
+    position: relative
+    &:before
+      content: ''
+      width: 136px
+      height: 192px
+      position: absolute
+      top: -5px
+      left: -32px
+      background: url(../images/dist/query.png) no-repeat
+    &:first-child,
+    &:nth-of-type(3)
+      &:after 
+        content: ''
+        width: 138px
+        height: 65px
+        position: absolute
+        top: -60%
+        right: -70px
+        background: url("data:image/svg+xml,%3Csvg width='138' height='65' viewBox='0 0 138 65' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.99996 42.8166C18.0826 25.3894 67.3295 -1.85437 135.656 28.5883' stroke='%23626262' stroke-opacity='0.2' stroke-width='3' stroke-linejoin='round' stroke-dasharray='20 20'/%3E%3C/svg%3E%0A") no-repeat
+    &:nth-of-type(2)
+      &:after 
+        content: ''
+        width: 198px
+        height: 96px
+        position: absolute
+        bottom: -120%
+        left: 175px
+        background: url("data:image/svg+xml,%3Csvg width='198' height='96' viewBox='0 0 198 96' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 2.15339C35.5 -3.17994 54 132.653 197 84.1534' stroke='%23626262' stroke-opacity='0.2' stroke-width='3' stroke-linejoin='round' stroke-dasharray='20 20'/%3E%3C/svg%3E%0A") no-repeat
+        z-index: 1
+    &:nth-of-type(4)
+      &:after 
+        content: ''
+        width: 92px
+        height: 47px
+        position: absolute
+        bottom: -45%
+        right: -50px
+        background: url("data:image/svg+xml,%3Csvg width='92' height='47' viewBox='0 0 92 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 20.9043C15.9825 29.8837 58.8884 38.6329 90.9523 24.4376' stroke='%23626262' stroke-opacity='0.2' stroke-width='3' stroke-linejoin='round' stroke-dasharray='20 20'/%3E%3C/svg%3E%0A") no-repeat
+        z-index: 1
+
+
+  &__link
+    color: #242424
+    span
+      display: inline-block
+      margin-bottom: 5px
+      font-size: 20px
+      font-weight: bold
+    p
+      font-weight: 400
+      line-height: 17px
+      color: #242424 !important
+      margin-bottom: 0
+
+
+  .btn
+    width: 281px
+    height: 64px
+    font-size: 18px
+    border: 2px solid #5D2E8C
+    &:hover
+      border: 2px solid
+
+

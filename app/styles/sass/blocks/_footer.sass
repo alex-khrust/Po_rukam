@@ -1,0 +1,103 @@
+.footer
+  width: 100%
+  // height: 296px
+  padding: 50px 0 20px
+  background: linear-gradient(180deg, #552EC2 0%, #5D2E8C 100%)
+  &--blue
+    color: #fff !important
+    a
+      color: #fff
+    .logo
+      span, p
+        color: #fff !important
+    .vl
+      background: #fff !important
+
+  .container
+    // display: grid
+    // grid-auto-flow: column
+    display: flex
+    justify-content: space-between
+    flex-flow: wrap
+
+  &__nav
+    width: 100%
+    max-width: 760px
+    display: grid
+    grid-auto-flow: column
+    align-items: start
+    justify-content: space-between
+    gap: 20px
+  
+.footer-menu
+  width: 100%
+  max-width: 170px
+  display: grid
+  grid-auto-flow: row
+  align-content: start
+  gap: 15px
+  .footer-topic
+    margin-bottom: 0
+    font-size: 15px
+    font-weight: 600
+  &__list
+    display: grid
+    grid-auto-flow: row
+    align-items: start
+    gap: 10px
+  &__item
+  &__link
+    font-size: 15px
+    font-weight: 400
+
+.footer__contacts
+  width: 100%
+  max-width: 275px
+  .logo
+    max-width: 100%
+    margin-right: 0
+    margin-bottom: 34px
+    position: relative
+    &:after
+      position: absolute
+      content: ''
+      bottom: -17px
+      left: 0
+      width: 100%
+      height: 1px
+      background: #fff
+      cursor: default
+  .contacts__list
+    display: grid
+    grid-auto-flow: row
+    gap: 5px
+  .contacts__item
+    white-space: nowrap
+    span
+      margin-right: 5px
+      font-size: 15px
+      font-weight: 600
+      white-space: nowrap
+    p
+      margin-bottom: 0
+      display: inline-block
+
+  .contacts__link
+    font-size: 400
+    white-space: nowrap
+
+
+.footer__copyright
+  width: 100%
+  height: auto
+  margin-top: 25px
+  display: grid
+  align-items: center
+  justify-content: center
+  gap: 18px
+  .copyright__item
+    font-size: 11px
+    color: rgba(255, 255, 255, 0.47)
+
+  .copyright__link
+    color: rgba(255, 255, 255, 0.47)
