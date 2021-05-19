@@ -1,12 +1,11 @@
 .post
   width: 100%
-  background: url(../images/dist/bg-decor.png) repeat center bottom 20%
+  background: url(../images/dist/bg-decor.png) repeat center top -3%
   background-size: 105%
   &__header
     width: 100%
     height: auto
     padding: 97px 0 128px
-    margin-bottom: 45px
     position: relative
     background: url(../images/dist/bg-blog__header.jpg) no-repeat center / cover
     &:after
@@ -22,7 +21,7 @@
   &__content
     width: 100%
     max-width: 720px
-    margin: 0 auto 70px
+    margin: 45px auto 0
     display: flex
     flex-flow: wrap
     .container
@@ -46,6 +45,9 @@
       font-size: 15px
       color: #552EC2
       &-sum
+
+  &--text
+    margin-top: 60px
 
   h2,
   h3,
@@ -115,7 +117,7 @@
 
 .blog--segment
   padding: 0 0 65px
-  margin-top: 70px
+  margin-top: 140px
   position: relative
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08)
   &:before,
