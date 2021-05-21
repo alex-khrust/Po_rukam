@@ -26,7 +26,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header_profile">
 
     <div class="header__topbar">
       <div class="container">
@@ -92,17 +92,37 @@
           </ul>
         </nav>
 
-        <ul class="header__enter">
-          <li class="enter__item">
+        <div class="header__enter">
+          <div class="enter__item">
             <a href="cabinet.html" class="enter__link">Войти</a>
-          </li>
-          <li class="enter__item">
+          </div>
+          <div class="enter__item">
             <a href="" class="enter__link">Регистрация</a>
-          </li>
-        </ul>
+          </div>
+
+          <div class="user">
+            <div class="user__photo">
+              <img src="images/dist/user-photo.jpg" alt="фото автора">
+            </div>
+            <div class="user__name">
+              <span class="status status_buyer active">Покупатель:</span>
+              <span class="status status_seller">Продавец:</span>
+              <span class="name">Степан Томило</span>
+              <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5" class="visuallyhidden" /><label for="star5" title="Лучший">★</label>
+                <input type="radio" id="star4" name="rating" value="4" class="visuallyhidden" /><label for="star4" title="Хороший">★</label>
+                <input type="radio" id="star3" name="rating" value="3" class="visuallyhidden" /><label for="star3" title="Средний">★</label>
+                <input type="radio" id="star2" name="rating" value="2" class="visuallyhidden" /><label for="star2" title="Ниже среднего">★</label>
+                <input type="radio" id="star1" name="rating" value="1" class="visuallyhidden" /><label for="star1" title="Худший">★</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <div class="user-type">
-          <button class="btn">Продавец</button>
+          <button class="btn btn_buyer active">Покупатель</button>
+          <button class="btn btn_seller">Продавец</button>
         </div>
 
         
@@ -114,5 +134,5 @@
   <div class="progress-container">
     <div class="progress-bar" id="progressBar"></div>
   </div>
-  <!-- /.header -->
+  <!-- /.header_profile -->
 

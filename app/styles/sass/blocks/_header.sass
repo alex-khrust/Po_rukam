@@ -94,6 +94,22 @@
       margin: 0
   
 .header
+  &_profile
+    .header__enter
+      display: flex
+      align-items: center
+      justify-content: center
+      .enter__item
+        display: none
+    .user__photo
+      width: 54px !important
+      height: 54px !important
+    .user__name
+      .status
+        display: none
+        &.active
+          display: block
+
   &__menu
     .menu
       gap: 20px
@@ -102,23 +118,29 @@
       font-size: 14px
 
   &__enter
+    width: auto
     height: 100%
-    padding: 7px 16px 7px 56px
+    padding: 7px 8px 7px 8px
     margin-left: auto
     box-sizing: content-box
     gap: 10px
     position: relative
     align-items: center
     background: rgba(247, 247, 247, 0.55)
-    &:before
-      content: ''
-      position: absolute
-      left: 16px
-      width: 30px
-      height: 30px
-      background: url(../images/dist/enter.svg)
+  
   .enter__item
     position: relative
+    &:first-child
+      padding-left: 35px
+      &:before
+        content: ''
+        width: 30px
+        height: 30px
+        position: absolute
+        left: 0px
+        top: 50%
+        transform: translateY(-50%)
+        background: url(../images/dist/enter.svg) no-repeat center / cover
     &:not(:last-child):after
       content: ''
       position: absolute
@@ -136,9 +158,12 @@
 
   .user-type
     margin-left: auto
-    button
+    .btn
       width: 172px
       height: 51px
+      display: none
+      &.active
+        display: block
 
 
 

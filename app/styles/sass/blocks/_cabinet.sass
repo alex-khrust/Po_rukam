@@ -1,0 +1,342 @@
+.cabinet
+  width: 100%
+  margin-top: 32px
+  background: url(../images/dist/bg-decor.png) repeat center top -3%
+  background-size: 105%
+  .inner
+    width: 100%
+    display: grid
+    grid-auto-flow: column
+    gap: 27px
+
+  &__header
+    display: flex
+    line-height: 1
+    margin-bottom: 27px
+    .title
+      font-size: 30px
+      font-weight: bold
+      margin-bottom: 0
+    .subtitle
+      padding-left: 50px
+      margin-bottom: 0
+      font-size: 30px
+      font-weight: bold
+      position: relative
+      color: #5D2E8C
+      &:before
+        content: ''
+        width: 15px
+        height: 15px
+        position: absolute
+        top: 50%
+        left: 25px
+        transform: translate(-50%, -50%)
+        background: linear-gradient(180deg, #552EC2 0%, #5D2E8C 100%)
+
+.user-sidebar
+  width: 100%
+  max-width: 300px
+
+  .sidebar-panel
+    width: 100%
+    max-width: 300px
+    height: auto
+    padding: 20px 45px 25px
+    margin-bottom: 20px
+    display: grid
+    gap: 11px
+    background: #FFFFFF
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08)
+
+    .user
+      &__photo
+        width: 54px
+        height: 54px
+      &__name
+        .status
+          font-weight: bold
+          color: #5D2E8C
+          display: none
+          &.active
+            display: block
+
+    &__menu
+      width: 100%
+      display: grid
+      grid-auto-flow: row
+      gap: 11px
+      
+    &__item
+      height: 32px
+      width: 208px
+
+    &__link
+      width: 100%
+      height: 100%
+      padding-left: 40px
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      background: #FFFFFF
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08)
+      position: relative
+      &:hover
+        box-shadow: 0px 4px 15px rgba(93, 46, 140, 0.37)
+      &:before
+        content: ''
+        width: 16px
+        height: 16px
+        position: absolute
+        top: 50%
+        left: 20px
+        transform: translate(-50%, -50%)
+        background-repeat: no-repeat !important
+        background-size: contain !important
+        background-position: center !important
+
+    .bid
+      &:before
+        background: url(../images/dist/bid.svg)
+    .notifications
+      &:before
+        background: url(../images/dist/notifications.svg)
+    .settings
+      &:before
+        background: url(../images/dist/settings.svg)
+    .bookmarks
+      &:before
+        background: url(../images/dist/bookmarks.svg)
+    .exit
+      &:before
+        background: url(../images/dist/exit.svg)
+
+
+  .btn
+    width: 100%
+
+
+.bid-list
+  width: 100%
+  height: auto
+  max-width: 841px
+  display: grid
+  grid-auto-flow: row
+  align-items: start
+  align-content: start
+  gap: 16px
+  &__item
+    width: 100%
+    height: auto
+    min-height: 88px
+    background: #FFFFFF
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08)
+    display: grid
+    grid-auto-flow: column
+    &>div
+      padding: 15px 20px
+      display: grid
+      justify-items: center
+      grid-template: 15px / 1fr
+      // align-content: baseline
+      align-items: center
+      white-space: nowrap
+      position: relative
+      &:not(:last-child)
+        border-right: 1px solid #5D2E8C
+
+  .bid
+    &-header
+      width: 100%
+      min-width: 330px
+      padding-right: 33px
+      display: grid
+      grid-auto-flow: row
+      &:after
+        content: ''
+        width: 8px
+        height: 12px
+        position: absolute
+        top: 50%
+        right: 20px
+        transform: translate(100%, -50%) 
+        border: 6px solid transparent
+        border-left: 6px solid #5D2E8C
+      .bid-title
+        justify-content: start
+    &-title
+      width: 100%
+      min-height: 16px
+      display: grid
+      grid-auto-flow: column
+      align-items: center
+      justify-content: center
+      align-self: start
+      gap: 10px
+      font-size: 8px
+      font-weight: 600
+      color: #000
+      white-space: wrap
+    &-name
+      margin-bottom: 0
+      font-size: 13px
+      font-weight: 700
+    &-city
+      font-size: 8px
+      font-weight: 600
+      color: #5D2E8C
+    &-description
+      margin-bottom: 0
+      font-size: 8px
+      white-space: normal
+    &-date
+      time
+        height: auto
+        padding-left: 20px
+        font-size: 12px
+        font-weight: 600
+        position: relative
+        &:before
+          content: ''
+          width: 15px
+          height: 15px
+          position: absolute
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          background: url(../images/dist/calendar.svg) no-repeat center / cover
+        span
+          margin-left: 5px
+          font-weight: 400
+    &-cost,
+    &-offers
+      font-size: 22px
+      font-weight: 700
+      color: #5D2E8C
+    &-date,
+    &-cost,
+    &-offers
+      time,
+      span:nth-child(2)
+        margin-bottom: 15px
+    &-edit
+      width: 100%
+      height: 100%
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      button
+        width: 100%
+        height: 100%
+        padding: 0
+        background: none
+        color: #000
+        &:hover
+          background: none
+          box-shadow: none
+          border: none
+        span
+          padding: 45px 20px 15px
+          font-size: 8px
+          font-weight: 600
+          position: relative
+          &:before
+            content: ''
+            width: 27px
+            height: 27px
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            background: url(../images/dist/edit.svg)
+
+
+
+
+
+.stars,
+.stars_aside
+  unicode-bidi: bidi-override
+  direction: rtl
+  white-space: nowrap
+  width: auto
+
+  .visuallyhidden
+    position: absolute !important 
+    clip: rect(1px 1px 1px 1px) 
+    clip: rect(1px, 1px, 1px, 1px)
+
+  label
+    margin-bottom: 0
+    &:after
+      content: "★"
+      color: inherit
+      -webkit-transform: scale(4)
+      position: absolute
+      z-index: 4
+      left: 0
+      transition: all .4s
+      opacity: 0
+      color: inherit
+      visibility: hidden
+
+  input:checked + label:after
+    visibility: visible
+    -webkit-transform: scale(1)
+    opacity: 1
+
+  label
+    font-size: 15px
+    position: relative
+    cursor: pointer
+    color: #C4C4C4
+  input:checked ~ label:before
+    opacity: 1
+  &:hover input ~ label:before
+    opacity: 0
+
+  input + label:before
+    content: "\2605"
+    position: absolute
+    left: 0
+    opacity: 0
+    transition: opacity .3s ease-in-out, color .3s ease-in-out
+    backface-visibility: hidden
+    -webkit-backface-visibility: hidden
+    -moz-backface-visibility: hidden
+    -ms-backface-visibility: hidden
+  input + label:hover:before,
+  input + label:hover ~ label:before
+    opacity: 1
+  input + label:nth-of-type(1):after,
+  input + label:nth-of-type(1):before,
+  input +  label:nth-of-type(1):hover:before,
+  input + label:nth-of-type(1):hover ~ label:before,
+  input:nth-of-type(1):checked ~ label:before
+    color: #2ecc71
+  input + label:nth-of-type(2):after,
+  input + label:nth-of-type(2):before,
+  input + label:nth-of-type(2):hover:before,
+  input + label:nth-of-type(2):hover ~ label:before,
+  input:nth-of-type(2):checked ~ label:before
+    color: #f1c40f
+  input + label:nth-of-type(3):after,
+  input + label:nth-of-type(3):before,
+  input + label:nth-of-type(3):hover:before,
+  input + label:nth-of-type(3):hover ~ label:before,
+  input:nth-of-type(3):checked ~ label:before
+    color: #F39C12
+  input + label:nth-of-type(4):after,
+  input + label:nth-of-type(4):before,
+  input + label:nth-of-type(4):hover:before,
+  input + label:nth-of-type(4):hover ~ label:before,
+  input:nth-of-type(4):checked ~ label:before
+    color: #e74c3c
+  input + label:nth-of-type(5):after,
+  input + label:nth-of-type(5):before,
+  label:nth-of-type(5):hover:before,
+  input:nth-of-type(5):checked ~ label:before
+    color: #d35400
+  label:nth-of-type(5):hover:before
+    color: #d35400 !important
