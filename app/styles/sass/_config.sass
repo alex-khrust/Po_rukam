@@ -97,8 +97,13 @@ a,
 button
 	transition: .3s
 
-.btn,
 button
+	display: flex
+	align-items: center
+	justify-content: center
+	font-family: Gilroy-Semibold
+
+.btn
 	width: 172px
 	height: 51px
 	display: flex
@@ -114,13 +119,13 @@ button
 		border: 1px solid #552EC2
 		background: #FFFFFF
 		box-shadow: 0px 10px 30px rgba(86, 46, 184, 0.48)
-.btn--transparrent
+.btn_transparrent
 	border: 2px solid #FFFFFF
 	background: none
 	&:hover
 		border: 2px solid #FFFFFF
 		box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.38)
-.btn--white
+.btn_white
 	color: #552EC2
 	border: 2px solid #FFFFFF
 	background: #fff
@@ -176,12 +181,12 @@ ol
 		margin-bottom: 0
 		font-size: 15px
 
-	&--white
+	&_white
 		color: #fff !important
 		.title
 			&:before
 				background: #fff
-	&--left
+	&_left
 		margin-left: none
 		justify-items: start
 		text-align: left

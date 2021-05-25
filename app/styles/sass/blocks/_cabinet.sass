@@ -57,9 +57,6 @@
         .status
           font-weight: bold
           color: #5D2E8C
-          display: none
-          &.active
-            display: block
 
     &__menu
       width: 100%
@@ -116,7 +113,9 @@
     width: 100%
 
 
-.bid-list
+.bid-list,
+.proposal-list,
+.notifications-list
   width: 100%
   height: auto
   max-width: 841px
@@ -133,23 +132,62 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08)
     display: grid
     grid-auto-flow: column
+    position: relative
+    &.performed,
+    &.hidden
+      &:before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+      &:after
+        width: 100%
+        height: 100%
+        padding-top: 35px
+        position: absolute
+        top: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        font: 600 12px Gilroy-Semibold
+        color: #000 
+        z-index: 1
+    &.performed
+      &:before
+        background: url(../images/dist/performed.svg) no-repeat center 15px rgba(255, 255, 255, 0.7)
+      &:after
+        content: 'Заказ выполняется'
+    &.hidden
+      &:before
+        background: url(../images/dist/hidden.svg) no-repeat center 15px rgba(255, 255, 255, 1)
+      &:after
+        content: 'Заказ временно скрыт'
+
     &>div
       padding: 15px 20px
       display: grid
       justify-items: center
       grid-template: 15px / 1fr
-      // align-content: baseline
       align-items: center
       white-space: nowrap
       position: relative
       &:not(:last-child)
         border-right: 1px solid #5D2E8C
 
-  .bid
+.bid-list,
+.proposal-list,
+.notifications-list
+  .bid,
+  .proposal,
+  .notifications
     &-header
       width: 100%
       min-width: 330px
-      padding-right: 33px
+      padding-right: 33px !important
       display: grid
       grid-auto-flow: row
       &:after
@@ -162,7 +200,9 @@
         transform: translate(100%, -50%) 
         border: 6px solid transparent
         border-left: 6px solid #5D2E8C
-      .bid-title
+      .bid-title,
+      .proposal-title,
+      .notifications-title
         justify-content: start
     &-title
       width: 100%
@@ -232,6 +272,7 @@
         padding: 0
         background: none
         color: #000
+        border: none
         &:hover
           background: none
           box-shadow: none
@@ -250,13 +291,85 @@
             left: 50%
             transform: translateX(-50%)
             background: url(../images/dist/edit.svg)
+    &-btns
+      display: grid
+      grid-auto-flow: column
+      align-content: center
+      justify-content: center
+      grid-template: 1fr 1fr/1fr 1fr
+      padding: 10px 10px 10px 0 !important
+      button
+        width: 100%
+        height: 100%
+        padding: 0 2px
+        font-size: 6px
+        font-weight: 600
+        background: none
+        border: none
+        &:hover
+          background: none
+          box-shadow: none
+          border: none
+        span
+          padding: 23px 0 0
+          position: relative
+          &:before
+            content: ''
+            width: 17px
+            height: 14px
+            position: absolute
+            bottom: 11px
+            left: 50%
+            transform: translateX(-50%)
+            background-repeat: no-repeat !important
+            background-size: contain !important
+        .confirmation:before
+          background: url(../images/dist/confirmation.svg)
+        .cancel:before
+          background: url(../images/dist/cancel.svg)
+        .clarify:before
+          background: url(../images/dist/clarify.svg)
+        .complaint:before
+          background: url(../images/dist/complaint.svg)
 
 
+.proposal-list__item
+  .user
+    padding-right: 12px
+  .proposal
+    &-header
+      min-width: unset !important
+      max-width: 275px !important
+  &>div
+    border-right: none !important
+    &:not(:first-child)
+      padding: 15px 18px
+      // padding-left: 0
+  &>div:first-child
+    grid-template: none
+  &>div:last-child
+    padding: 0
+
+.notifications
+  &-header
+    padding-left: 58px !important
+    &:before
+      content: ''
+      width: 18px
+      height: 21px
+      position: absolute
+      top: 50%
+      left: 29px
+      transform: translate(-50%, -50%)
+      background: url(../images/dist/notifications.svg) no-repeat center / contain
+    &:after
+      display: none
 
 
 
 .stars,
-.stars_aside
+.stars_aside,
+.stars_seller
   unicode-bidi: bidi-override
   direction: rtl
   white-space: nowrap

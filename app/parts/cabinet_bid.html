@@ -1,4 +1,4 @@
-<section class="cabinet">
+<section class="cabinet cabinet_bid">
   <div class="container">
     <div class="cabinet__header">
       <h1 class="title">Личный кабинет</h1>
@@ -27,19 +27,19 @@
           </div>
           <ul class="sidebar-panel__menu">
             <li class="sidebar-panel__item">
-              <a href="" class="sidebar-panel__link bid">Заявки</a>
+              <a href="cabinet_bid.html" class="sidebar-panel__link bid">Заявки</a>
             </li>
             <li class="sidebar-panel__item">
-              <a href="" class="sidebar-panel__link notifications">Уведомления</a>
+              <a href="cabinet_notifications.html" class="sidebar-panel__link notifications">Уведомления</a>
             </li>
             <li class="sidebar-panel__item">
-              <a href="" class="sidebar-panel__link settings">Настройки</a>
+              <a href="cabinet_settings.html" class="sidebar-panel__link settings">Настройки</a>
             </li>
             <li class="sidebar-panel__item">
-              <a href="" class="sidebar-panel__link bookmarks">Закладки</a>
+              <a href="cabinet_bookmarks.html" class="sidebar-panel__link bookmarks">Закладки</a>
             </li>
             <li class="sidebar-panel__item">
-              <a href="" class="sidebar-panel__link exit">Выход</a>
+              <a href="index.html" class="sidebar-panel__link exit">Выход</a>
             </li>
           </ul>
         </div>
@@ -72,28 +72,86 @@
             <button><span>Редактировать</span></button>
           </div>
         </div>
-        <div class="bid-list__item">
-          <div class="bid-header">
-            <div class="bid-title">
-              <h2 class="bid-name">Название товара</h2>
-              <span class="bid-city">г. Одесса</span>
+        <div class="proposal-list">
+          <div class="proposal-list__item">
+            <div class="user">
+              <div class="user__photo">
+                <img src="images/dist/taras.jpg" alt="фото автора">
+              </div>
+              <div class="user__name">
+                <span class="status status_buyer">Покупатель:</span>
+                <span class="status status_seller active">Продавец:</span>
+                <span class="name">Тарас Олійник</span>
+                <div class="stars_seller">
+                  <input type="radio" id="seller-star5" name="stars_seller" value="5" class="visuallyhidden" /><label for="seller-star5" title="Лучший">★</label>
+                  <input type="radio" id="seller-star4" name="stars_seller" value="4" class="visuallyhidden" /><label for="seller-star4" title="Хороший">★</label>
+                  <input type="radio" id="seller-star3" name="stars_seller" value="3" class="visuallyhidden" /><label for="seller-star3" title="Средний">★</label>
+                  <input type="radio" id="seller-star2" name="stars_seller" value="2" class="visuallyhidden" /><label for="seller-star2" title="Ниже среднего">★</label>
+                  <input type="radio" id="seller-star1" name="stars_seller" value="1" class="visuallyhidden" /><label for="seller-star1" title="Худший">★</label>
+                </div>
+              </div>
             </div>
-            <p class="bid-description">А также диаграммы связей будут указаны как претенденты на роль ключевых факторов. А также интерактивные прототипы финансовых предпосылок. Имеется</p>
+            <div class="proposal-header">
+              <div class="proposal-title">
+                <h2 class="proposal-name">Название товара</h2>
+                <span class="proposal-city">г. Одесса</span>
+              </div>
+              <p class="proposal-description">А также диаграммы связей будут указаны как претенденты на роль ключевых факторов. А также интерактивные прототипы финансовых предпосылок. Имеется</p>
+            </div>
+            <div class="proposal-date">
+              <span class="proposal-title">Дата:</span>
+              <time datetime="2021-04-16 16:45">16.04.2021 <span>16:45</span></time>
+            </div>
+            <div class="proposal-cost">
+              <span class="proposal-title">Цена:</span>
+              <span>********</span>
+            </div>
+            <div class="proposal-btns">
+              <button><span class="confirmation">Принять заявку</span></button>
+              <button><span class="clarify">Уточнить</span></button>
+              <button><span class="cancel">Отменить заявку</span></button>
+              <button><span class="complaint">Пожаловаться</span></button>
+            </div>
           </div>
-          <div class="bid-date">
-            <span class="bid-title">Дата:</span>
-            <time datetime="2021-04-16 16:45">16.04.2021 <span>16:45</span></time>
-          </div>
-          <div class="bid-cost">
-            <span class="bid-title">Цена:</span>
-            <span>759 грн</span>
-          </div>
-          <div class="bid-offers">
-            <span class="bid-title">Полученно предложений:</span>
-            <span>259</span>
-          </div>
-          <div class="bid-edit">
-            <button><span>Редактировать</span></button>
+          <div class="proposal-list__item">
+            <div class="user">
+              <div class="user__photo">
+                <img src="images/dist/taras.jpg" alt="фото автора">
+              </div>
+              <div class="user__name">
+                <span class="status status_buyer">Покупатель:</span>
+                <span class="status status_seller active">Продавец:</span>
+                <span class="name">Тарас Олійник</span>
+                <div class="stars_seller">
+                  <input type="radio" id="seller-star5" name="stars_seller" value="5" class="visuallyhidden" /><label for="seller-star5" title="Лучший">★</label>
+                  <input type="radio" id="seller-star4" name="stars_seller" value="4" class="visuallyhidden" /><label for="seller-star4" title="Хороший">★</label>
+                  <input type="radio" id="seller-star3" name="stars_seller" value="3" class="visuallyhidden" /><label for="seller-star3" title="Средний">★</label>
+                  <input type="radio" id="seller-star2" name="stars_seller" value="2" class="visuallyhidden" /><label for="seller-star2" title="Ниже среднего">★</label>
+                  <input type="radio" id="seller-star1" name="stars_seller" value="1" class="visuallyhidden" /><label for="seller-star1" title="Худший">★</label>
+                </div>
+              </div>
+            </div>
+            <div class="proposal-header">
+              <div class="proposal-title">
+                <h2 class="proposal-name">Название товара</h2>
+                <span class="proposal-city">г. Одесса</span>
+              </div>
+              <p class="proposal-description">А также диаграммы связей будут указаны как претенденты на роль ключевых факторов. А также интерактивные прототипы финансовых предпосылок. Имеется</p>
+            </div>
+            <div class="proposal-date">
+              <span class="proposal-title">Дата:</span>
+              <time datetime="2021-04-16 16:45">16.04.2021 <span>16:45</span></time>
+            </div>
+            <div class="proposal-cost">
+              <span class="proposal-title">Цена:</span>
+              <span>********</span>
+            </div>
+            <div class="proposal-btns">
+              <button><span class="confirmation">Принять заявку</span></button>
+              <button><span class="clarify">Уточнить</span></button>
+              <button><span class="cancel">Отменить заявку</span></button>
+              <button><span class="complaint">Пожаловаться</span></button>
+            </div>
           </div>
         </div>
         <div class="bid-list__item">
@@ -120,7 +178,7 @@
             <button><span>Редактировать</span></button>
           </div>
         </div>
-        <div class="bid-list__item">
+        <div class="bid-list__item performed">
           <div class="bid-header">
             <div class="bid-title">
               <h2 class="bid-name">Название товара</h2>
@@ -144,31 +202,7 @@
             <button><span>Редактировать</span></button>
           </div>
         </div>
-        <div class="bid-list__item">
-          <div class="bid-header">
-            <div class="bid-title">
-              <h2 class="bid-name">Название товара</h2>
-              <span class="bid-city">г. Одесса</span>
-            </div>
-            <p class="bid-description">А также диаграммы связей будут указаны как претенденты на роль ключевых факторов. А также интерактивные прототипы финансовых предпосылок. Имеется</p>
-          </div>
-          <div class="bid-date">
-            <span class="bid-title">Дата:</span>
-            <time datetime="2021-04-16 16:45">16.04.2021 <span>16:45</span></time>
-          </div>
-          <div class="bid-cost">
-            <span class="bid-title">Цена:</span>
-            <span>759 грн</span>
-          </div>
-          <div class="bid-offers">
-            <span class="bid-title">Полученно предложений:</span>
-            <span>259</span>
-          </div>
-          <div class="bid-edit">
-            <button><span>Редактировать</span></button>
-          </div>
-        </div>
-        <div class="bid-list__item">
+        <div class="bid-list__item hidden">
           <div class="bid-header">
             <div class="bid-title">
               <h2 class="bid-name">Название товара</h2>
@@ -198,4 +232,4 @@
 
   </div>
 </section>
-<!-- /cabinet -->
+<!-- /cabinet_bid -->
