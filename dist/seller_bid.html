@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+
+  <title>По рукам</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+
+  <link rel="icon" href="images/favicon.png">
+  <meta property="og:image" content="images/dist/po-rukam-prew.jpg">
+
+  <meta property="og:title" content="По рукам">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://po-rukam.com">
+  <meta property="og:image" content="images/dist/logo.svg">
+  <meta property="og:site_name" content="По рукам">
+  
+  <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+  <header class="header header_buyer">
+
+    <div class="header__topbar">
+      <div class="container">
+
+        <ul class="header__nav">
+          <li class="nav__item">
+            <a href="" class="nav__link">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Информация</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Помощь</a>
+          </li>
+        </ul>
+
+        <ul class="header__lang">
+          <li class="lang__item">
+            <a href="" class="lang__link">UA</a>
+          </li>
+          <li class="lang__item">
+            <a href="" class="lang__link">ENG</a>
+          </li>
+          <li class="lang__item">
+            <a href="" class="lang__link">RUS</a>
+          </li>
+        </ul> 
+
+      </div>
+    </div>
+
+    <div class="header__inner">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img src="images/dist/logo.svg" alt="logo">
+          <div class="vl"></div>
+          <div class="slogan">
+            <span>По рукам</span>
+            <p>Выбирай, а не ищи</p>
+          </div>
+        </a>
+
+        <nav class="header__menu">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Главная страница</a>
+            </li>
+            <li class="menu__item">
+              <a href="text.html" class="menu__link">О проекте</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Как пользоваться</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a href="blog.html" class="menu__link">Блог</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__enter">
+          <div class="enter__item">
+            <a href="buyer_bid.html" class="enter__link">Войти</a>
+          </div>
+          <div class="enter__item">
+            <a href="" class="enter__link">Регистрация</a>
+          </div>
+
+          <div class="user">
+            <div class="user__photo">
+              <img src="images/dist/taras.jpg" alt="фото автора">
+            </div>
+            <div class="user__name">
+              <span class="status status_buyer">Покупатель:</span>
+              <span class="status status_seller active">Продавец:</span>
+              <span class="name">Тарас Олійник</span>
+              <div class="stars_seller">
+                <input type="radio" id="seller-star5" name="stars_seller" value="5" class="visuallyhidden" /><label for="seller-star5" title="Лучший">★</label>
+                <input type="radio" id="seller-star4" name="stars_seller" value="4" class="visuallyhidden" /><label for="seller-star4" title="Хороший">★</label>
+                <input type="radio" id="seller-star3" name="stars_seller" value="3" class="visuallyhidden" /><label for="seller-star3" title="Средний">★</label>
+                <input type="radio" id="seller-star2" name="stars_seller" value="2" class="visuallyhidden" /><label for="seller-star2" title="Ниже среднего">★</label>
+                <input type="radio" id="seller-star1" name="stars_seller" value="1" class="visuallyhidden" /><label for="seller-star1" title="Худший">★</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="user-type">
+          <button class="btn btn_buyer">Покупатель</button>
+          <button class="btn btn_seller active">Продавец</button>
+        </div>
+
+        
+      </div>
+    </div>
+    
+  </header>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <!-- /.header_buyer -->
+
+
+
+<main class="cabinet seller_bid">
+  <div class="container">
+    <div class="cabinet__header">
+      <h1 class="title">Личный кабинет</h1>
+      <p class="subtitle">Заявки</p>
+    </div>
+    <div class="inner">
+
+      <aside class="user-sidebar">
+        <div class="sidebar-panel">
+          <div class="user">
+            <div class="user__photo">
+              <img src="images/dist/taras.jpg" alt="фото автора">
+            </div>
+            <div class="user__name">
+              <span class="status status_buyer">Покупатель:</span>
+              <span class="status status_seller active">Продавец:</span>
+              <span class="name">Тарас Олійник</span>
+              <div class="stars_seller">
+                <input type="radio" id="seller-star5" name="stars_seller" value="5" class="visuallyhidden" /><label for="seller-star5" title="Лучший">★</label>
+                <input type="radio" id="seller-star4" name="stars_seller" value="4" class="visuallyhidden" /><label for="seller-star4" title="Хороший">★</label>
+                <input type="radio" id="seller-star3" name="stars_seller" value="3" class="visuallyhidden" /><label for="seller-star3" title="Средний">★</label>
+                <input type="radio" id="seller-star2" name="stars_seller" value="2" class="visuallyhidden" /><label for="seller-star2" title="Ниже среднего">★</label>
+                <input type="radio" id="seller-star1" name="stars_seller" value="1" class="visuallyhidden" /><label for="seller-star1" title="Худший">★</label>
+              </div>
+            </div>
+          </div>
+          <ul class="sidebar-panel__menu">
+            <li class="sidebar-panel__item">
+              <a href="seller_bid.html" class="sidebar-panel__link bid">Заявки</a>
+            </li>
+            <li class="sidebar-panel__item">
+              <a href="seller_notifications.html" class="sidebar-panel__link notifications">Уведомления</a>
+            </li>
+            <li class="sidebar-panel__item">
+              <a href="cabinet_settings.html" class="sidebar-panel__link settings">Настройки</a>
+            </li>
+            <li class="sidebar-panel__item">
+              <a href="seller_bookmarks.html" class="sidebar-panel__link bookmarks">Закладки</a>
+            </li>
+            <li class="sidebar-panel__item">
+              <a href="index.html" class="sidebar-panel__link exit">Выход</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+  
+      <section class="bid-list">
+  
+        <div class="bid-list__item">
+          <div class="user">
+            <div class="user__photo">
+              <img src="images/dist/user-photo.jpg" alt="фото автора">
+            </div>
+            <div class="user__name">
+              <span class="status status_buyer active">Покупатель:</span>
+              <span class="status status_seller">Продавец:</span>
+              <span class="name">Степан Томило</span>
+              <div class="stars_aside">
+                <input type="radio" id="aside-star5" name="stars_aside" value="5" class="visuallyhidden" /><label for="aside-star5" title="Лучший">★</label>
+                <input type="radio" id="aside-star4" name="stars_aside" value="4" class="visuallyhidden" /><label for="aside-star4" title="Хороший">★</label>
+                <input type="radio" id="aside-star3" name="stars_aside" value="3" class="visuallyhidden" /><label for="aside-star3" title="Средний">★</label>
+                <input type="radio" id="aside-star2" name="stars_aside" value="2" class="visuallyhidden" /><label for="aside-star2" title="Ниже среднего">★</label>
+                <input type="radio" id="aside-star1" name="stars_aside" value="1" class="visuallyhidden" /><label for="aside-star1" title="Худший">★</label>
+              </div>
+            </div>
+          </div>
+          <div class="bid-header">
+            <div class="bid-title">
+              <h2 class="bid-name">Название товара</h2>
+              <span class="bid-city">г. Одесса</span>
+            </div>
+            <p class="bid-description">А также диаграммы связей будут указаны как претенденты на роль ключевых факторов. А также интерактивные прототипы финансовых предпосылок. Имеется</p>
+          </div>
+          <div class="bid-date">
+            <span class="bid-title">Дата:</span>
+            <time datetime="2021-04-16 16:45">16.04.2021 <span>16:45</span></time>
+          </div>
+          <div class="bid-cost">
+            <span class="bid-title">Цена:</span>
+            <span>759 грн</span>
+          </div>
+          <div class="bid-btns">
+            <button class="btn">Предложить</button>
+            <button class="btn btn_transparrent_invert">Пожаловаться</button>
+          </div>
+        </div>
+        <div class="bid-list__item">
+          <div class="user">
+            <div class="user__photo">
+              <img src="images/dist/user-photo.jpg" alt="фото автора">
+            </div>
+            <div class="user__name">
+              <span class="status status_buyer active">Покупатель:</span>
+              <span class="status status_seller">Продавец:</span>
+              <span class="name">Степан Томило</span>
+              <div class="stars_aside">
+                <input type="radio" id="aside-star5" name="stars_aside" value="5" class="visuallyhidden" /><label for="aside-star5" title="Лучший">★</label>
+                <input type="radio" id="aside-star4" name="stars_aside" value="4" class="visuallyhidden" /><label for="aside-star4" title="Хороший">★</label>
+                <input type="radio" id="aside-star3" name="stars_aside" value="3" class="visuallyhidden" /><label for="aside-star3" title="Средний">★</label>
+                <input type="radio" id="aside-star2" name="stars_aside" value="2" class="visuallyhidden" /><label for="aside-star2" title="Ниже среднего">★</label>
+                <input type="radio" id="aside-star1" name="stars_aside" value="1" class="visuallyhidden" /><label for="aside-star1" title="Худший">★</label>
+              </div>
+            </div>
+          </div>
+          <div class="bid-header">
+            <div class="bid-title">
+              <h2 class="bid-name">Название товара</h2>
+              <span class="bid-city">г. Одесса</span>
+            </div>
+            <p class="bid-description">А также диаграммы связей будут указаны как претенденты на роль ключевых факторов. А также интерактивные прототипы финансовых предпосылок. Имеется</p>
+          </div>
+          <div class="bid-date">
+            <span class="bid-title">Дата:</span>
+            <time datetime="2021-04-16 16:45">16.04.2021 <span>16:45</span></time>
+          </div>
+          <div class="bid-cost">
+            <span class="bid-title">Цена:</span>
+            <span>759 грн</span>
+          </div>
+          <div class="bid-btns">
+            <button class="btn">Предложить</button>
+            <button class="btn btn_transparrent_invert">Пожаловаться</button>
+          </div>
+        </div>
+        <div class="bid-list__item hidden">
+          <div class="user">
+            <div class="user__photo">
+              <img src="images/dist/user-photo.jpg" alt="фото автора">
+            </div>
+            <div class="user__name">
+              <span class="status status_buyer active">Покупатель:</span>
+              <span class="status status_seller">Продавец:</span>
+              <span class="name">Степан Томило</span>
+              <div class="stars_aside">
+                <input type="radio" id="aside-star5" name="stars_aside" value="5" class="visuallyhidden" /><label for="aside-star5" title="Лучший">★</label>
+                <input type="radio" id="aside-star4" name="stars_aside" value="4" class="visuallyhidden" /><label for="aside-star4" title="Хороший">★</label>
+                <input type="radio" id="aside-star3" name="stars_aside" value="3" class="visuallyhidden" /><label for="aside-star3" title="Средний">★</label>
+                <input type="radio" id="aside-star2" name="stars_aside" value="2" class="visuallyhidden" /><label for="aside-star2" title="Ниже среднего">★</label>
+                <input type="radio" id="aside-star1" name="stars_aside" value="1" class="visuallyhidden" /><label for="aside-star1" title="Худший">★</label>
+              </div>
+            </div>
+          </div>
+          <div class="bid-header">
+            <div class="bid-title">
+              <h2 class="bid-name">Название товара</h2>
+              <span class="bid-city">г. Одесса</span>
+            </div>
+            <p class="bid-description">А также диаграммы связей будут указаны как претенденты на роль ключевых факторов. А также интерактивные прототипы финансовых предпосылок. Имеется</p>
+          </div>
+          <div class="bid-date">
+            <span class="bid-title">Дата:</span>
+            <time datetime="2021-04-16 16:45">16.04.2021 <span>16:45</span></time>
+          </div>
+          <div class="bid-cost">
+            <span class="bid-title">Цена:</span>
+            <span>759 грн</span>
+          </div>
+          <div class="bid-btns">
+            <button class="btn">Предложить</button>
+            <button class="btn btn_transparrent_invert">Пожаловаться</button>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </div>
+</main>
+<!-- /seller_bid -->
+
+  <footer class="footer footer_blue">
+    <div class="container">
+      <div class="footer__contacts">
+        <a class="logo" href="index.html">
+          <img src="images/dist/logo-white.svg" alt="logo">
+          <div class="vl"></div>
+          <div class="slogan">
+            <span>По рукам</span>
+            <p>Выбирай, а не ищи</p>
+          </div>
+        </a>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span>Номер телефона:</span>
+            <a href="tel:+380668873234" class="contacts__link">+ 380 (66) 887 3 234</a>
+          </li>
+          <li class="contacts__item">
+            <span>График работы:</span>
+            <p>пн - пт 8:00 - 19:00</p>
+          </li>
+          <li class="contacts__item">
+            <span>Email:</span>
+            <a href="mailto:porukam@gmail.com" class="contacts__link">porukam@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <div class="footer-menu">
+          <h4 class="footer-topic">Основное</h4>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="index.html" class="footer-menu__link">Главная страница</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="text.html" class="footer-menu__link">О проекте</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">Как пользоваться</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">Отзывы</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">FAQ</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="blog.html" class="footer-menu__link">Блог</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h4 class="footer-topic">Личный кабинет</h4>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="buyer_bid.html" class="footer-menu__link">Войти</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h4 class="footer-topic">Дополнительно</h4>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">Контакты</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">Помощь</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">Информация</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h4 class="footer-topic">Обратная связь</h4>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">Задать вопрос</a>
+            </li>
+            <li class="footer-menu__item">
+              <a href="" class="footer-menu__link">Связаться по поводу сотрудничества</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="footer__copyright">
+        <li class="copyright__item">2021 © По рукам</li>
+        <li class="copyright__item">Все права защищены</li>
+        <li class="copyright__item">
+          <a href="" class="copyright__link">Публичная офферта</a>
+        </li>
+        <li class="copyright__item">
+          <a href="" class="copyright__link">Лицензионное соглашение</a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+  <!-- /.footer -->
+  
+  <script src="js/app.min.js"></script>
+
+</body>
+</html>
