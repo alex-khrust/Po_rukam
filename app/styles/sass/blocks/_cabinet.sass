@@ -178,6 +178,15 @@
       &:not(:last-child)
         border-right: 1px solid #5D2E8C
 
+    .user
+      grid-template: none !important
+      &+ 
+        .bid,
+        .proposal,
+        .notifications
+          &-header
+            min-width: unset
+
 .bid-list,
 .proposal-list,
 .notifications-list
@@ -291,46 +300,58 @@
             left: 50%
             transform: translateX(-50%)
             background: url(../images/dist/edit.svg)
-    &-btns
-      display: grid
-      grid-auto-flow: column
-      align-content: center
-      justify-content: center
-      grid-template: 1fr 1fr/1fr 1fr
-      padding: 10px 10px 10px 0 !important
-      button
-        width: 100%
-        height: 100%
-        padding: 0 2px
-        font-size: 6px
-        font-weight: 600
+  .bid-btns
+    display: grid
+    grid-template: none
+    align-content: center
+    justify-content: center
+    gap: 5px
+    .btn
+      width: 100%
+      max-width: 105px
+      height: 27px
+      font: 600 10px Gilroy-Semibold
+
+  .proposal-btns
+    display: grid
+    grid-auto-flow: column
+    align-content: center
+    justify-content: center
+    grid-template: 1fr 1fr/1fr 1fr
+    padding: 10px 10px 10px 0 !important
+    button
+      width: 100%
+      height: 100%
+      padding: 0 2px
+      font-size: 6px
+      font-weight: 600
+      background: none
+      border: none
+      &:hover
         background: none
+        box-shadow: none
         border: none
-        &:hover
-          background: none
-          box-shadow: none
-          border: none
-        span
-          padding: 23px 0 0
-          position: relative
-          &:before
-            content: ''
-            width: 17px
-            height: 14px
-            position: absolute
-            bottom: 11px
-            left: 50%
-            transform: translateX(-50%)
-            background-repeat: no-repeat !important
-            background-size: contain !important
-        .confirmation:before
-          background: url(../images/dist/confirmation.svg)
-        .cancel:before
-          background: url(../images/dist/cancel.svg)
-        .clarify:before
-          background: url(../images/dist/clarify.svg)
-        .complaint:before
-          background: url(../images/dist/complaint.svg)
+      span
+        padding: 23px 0 0
+        position: relative
+        &:before
+          content: ''
+          width: 17px
+          height: 14px
+          position: absolute
+          bottom: 11px
+          left: 50%
+          transform: translateX(-50%)
+          background-repeat: no-repeat !important
+          background-size: contain !important
+      .confirmation:before
+        background: url(../images/dist/confirmation.svg)
+      .cancel:before
+        background: url(../images/dist/cancel.svg)
+      .clarify:before
+        background: url(../images/dist/clarify.svg)
+      .complaint:before
+        background: url(../images/dist/complaint.svg)
 
 
 .proposal-list__item
@@ -344,9 +365,6 @@
     border-right: none !important
     &:not(:first-child)
       padding: 15px 18px
-      // padding-left: 0
-  &>div:first-child
-    grid-template: none
   &>div:last-child
     padding: 0
 

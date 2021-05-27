@@ -119,21 +119,30 @@ button
 		border: 1px solid #552EC2
 		background: #FFFFFF
 		box-shadow: 0px 10px 30px rgba(86, 46, 184, 0.48)
-.btn_transparrent
-	border: 2px solid #FFFFFF
-	background: none
-	&:hover
+	&_transparrent
 		border: 2px solid #FFFFFF
-		box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.38)
-.btn_white
-	color: #552EC2
-	border: 2px solid #FFFFFF
-	background: #fff
-	&:hover
 		background: none
-		color: #fff
-		border: 2px solid #fff
-		box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.38)
+		&:hover
+			border: 2px solid #FFFFFF
+			box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.38)
+		&_invert
+			color: #552EC2
+			border: 1px solid #552EC2
+			background: #fff
+			&:hover
+				color: #fff
+				border: 1px solid #552EC2
+				background: linear-gradient(180deg, #552EC2 0%, #5D2E8C 100%)
+				box-shadow: 0px 10px 30px rgba(86, 46, 184, 0.48)
+	&_white
+		color: #552EC2
+		border: 2px solid #FFFFFF
+		background: #fff
+		&:hover
+			background: none
+			color: #fff
+			border: 2px solid #fff
+			box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.38)
 
 ul
 	list-style: none

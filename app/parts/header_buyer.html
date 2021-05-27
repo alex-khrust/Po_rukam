@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+
+  <title><!--#echo var="title" --></title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+
+  <link rel="icon" href="images/favicon.png">
+  <meta property="og:image" content="images/dist/po-rukam-prew.jpg">
+
+  <meta property="og:title" content="По рукам">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://po-rukam.com">
+  <meta property="og:image" content="images/dist/logo.svg">
+  <meta property="og:site_name" content="По рукам">
+  
+  <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+  <header class="header header_buyer">
+
+    <div class="header__topbar">
+      <div class="container">
+
+        <ul class="header__nav">
+          <li class="nav__item">
+            <a href="" class="nav__link">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Информация</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Помощь</a>
+          </li>
+        </ul>
+
+        <ul class="header__lang">
+          <li class="lang__item">
+            <a href="" class="lang__link">UA</a>
+          </li>
+          <li class="lang__item">
+            <a href="" class="lang__link">ENG</a>
+          </li>
+          <li class="lang__item">
+            <a href="" class="lang__link">RUS</a>
+          </li>
+        </ul> 
+
+      </div>
+    </div>
+
+    <div class="header__inner">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img src="images/dist/logo.svg" alt="logo">
+          <div class="vl"></div>
+          <div class="slogan">
+            <span>По рукам</span>
+            <p>Выбирай, а не ищи</p>
+          </div>
+        </a>
+
+        <nav class="header__menu">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Главная страница</a>
+            </li>
+            <li class="menu__item">
+              <a href="text.html" class="menu__link">О проекте</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Как пользоваться</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a href="blog.html" class="menu__link">Блог</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__enter">
+          <div class="enter__item">
+            <a href="buyer_bid.html" class="enter__link">Войти</a>
+          </div>
+          <div class="enter__item">
+            <a href="" class="enter__link">Регистрация</a>
+          </div>
+
+          <div class="user">
+            <div class="user__photo">
+              <img src="images/dist/user-photo.jpg" alt="фото автора">
+            </div>
+            <div class="user__name">
+              <span class="status status_buyer active">Покупатель:</span>
+              <span class="status status_seller">Продавец:</span>
+              <span class="name">Степан Томило</span>
+              <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5" class="visuallyhidden" /><label for="star5" title="Лучший">★</label>
+                <input type="radio" id="star4" name="rating" value="4" class="visuallyhidden" /><label for="star4" title="Хороший">★</label>
+                <input type="radio" id="star3" name="rating" value="3" class="visuallyhidden" /><label for="star3" title="Средний">★</label>
+                <input type="radio" id="star2" name="rating" value="2" class="visuallyhidden" /><label for="star2" title="Ниже среднего">★</label>
+                <input type="radio" id="star1" name="rating" value="1" class="visuallyhidden" /><label for="star1" title="Худший">★</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="user-type">
+          <button class="btn btn_buyer active">Покупатель</button>
+          <button class="btn btn_seller">Продавец</button>
+        </div>
+
+        
+      </div>
+    </div>
+    
+  </header>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <!-- /.header_buyer -->
+
