@@ -1,0 +1,97 @@
+<main class="cabinet seller_settings">
+  <div class="container">
+    <div class="cabinet__header">
+      <h1 class="title">Личный кабинет</h1>
+      <p class="subtitle">Заявки</p>
+    </div>
+    <div class="inner">
+
+      <aside class="user-sidebar">
+        <div class="sidebar-panel">
+          <div class="user">
+            <div class="user__photo">
+              <img src="images/dist/taras.jpg" alt="фото автора">
+            </div>
+            <div class="user__name">
+              <span class="status status_buyer">Покупатель:</span>
+              <span class="status status_seller active">Продавец:</span>
+              <span class="name">Тарас Олійник</span>
+              <div class="stars_seller">
+                <input type="radio" id="seller-star5" name="stars_seller" value="5" class="visuallyhidden" /><label for="seller-star5" title="Лучший">★</label>
+                <input type="radio" id="seller-star4" name="stars_seller" value="4" class="visuallyhidden" /><label for="seller-star4" title="Хороший">★</label>
+                <input type="radio" id="seller-star3" name="stars_seller" value="3" class="visuallyhidden" /><label for="seller-star3" title="Средний">★</label>
+                <input type="radio" id="seller-star2" name="stars_seller" value="2" class="visuallyhidden" /><label for="seller-star2" title="Ниже среднего">★</label>
+                <input type="radio" id="seller-star1" name="stars_seller" value="1" class="visuallyhidden" /><label for="seller-star1" title="Худший">★</label>
+              </div>
+            </div>
+          </div>
+          <ul class="sidebar-panel__menu">
+            <li class="sidebar-panel__item">
+              <a href="seller_bid.html" class="sidebar-panel__link bid">Заявки</a>
+            </li>
+            <li class="sidebar-panel__item">
+              <a href="seller_notifications.html" class="sidebar-panel__link notifications">Уведомления</a>
+            </li>
+            <li class="sidebar-panel__item">
+              <a href="seller_settings.html" class="sidebar-panel__link settings">Настройки</a>
+            </li>
+            <li class="sidebar-panel__item">
+              <a href="seller_bookmarks.html" class="sidebar-panel__link bookmarks">Закладки</a>
+            </li>
+            <li class="sidebar-panel__item">
+              <a href="index.html" class="sidebar-panel__link exit">Выход</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+  
+      <section class="settings-list">
+        <form action="" id="settings__form" class="settings-list__form" method="POST">
+          <div class="settings-list__item">
+            <div class="settings-box">
+              <h2 class="title">Учетная запись</h2>
+              <label>Email:<input type="email" name="email" id="" required></label>
+              <label>Никнейм:<input type="name" name="name" id="" required></label>
+              <label>Телефон:<input type="tel" name="phone" id="" required></label>
+            </div>
+          </div>
+          <div class="settings-list__item">
+            <div class="settings-box">
+              <h2 class="title">Смена пароля</h2>
+              <label>Старый Пароль:<input type="password" name="old-password" id=""></label>
+              <label>Новый пароль:<input type="password" name="new-password" id=""></label>
+              <label>Повторите пароль:<input type="password" name="new-password" id=""></label>
+            </div>
+          </div>
+          <div class="settings-list__item">
+            <div class="settings-box">
+              <h2 class="title">Уведомления</h2>
+              <label class="chbx">
+                Включить уведомления о заявках на почту
+                <input type="checkbox" name="" id="">
+                <span></span>
+              </label>
+              <label class="chbx">
+                Включить уведомления о новостях проекта
+                <input type="checkbox" name="" id="">
+                <span></span>
+              </label>
+              <label class="chbx">
+                Присылать ответы на вопросы на почту
+                <input type="checkbox" name="" id="">
+                <span></span>
+              </label>
+            </div>
+            <div class="settings-box city">
+              <label>Город:<input type="text" name="city" id=""></label>
+            </div>
+          </div>
+          <button form="settings__form" class="btn" type="submit">Сохранить</button>
+        </form>
+      </section>
+
+    </div>
+
+  </div>
+</main>
+<!-- /seller_settings -->
