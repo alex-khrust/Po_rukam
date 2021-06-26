@@ -22,6 +22,12 @@
   <meta property="og:site_name" content="По рукам">
   
   <link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="css/custom.min.css">
+
+  <!-- Удалить по завершению вёрстки-->
+  <link rel="stylesheet" href="https://alex-khrust.github.io/Po_rukam/dist/css/app.min.css">
+  <link rel="stylesheet" href="https://alex-khrust.github.io/Po_rukam/dist/js/app.min.js">
+  
 
 </head>
 
@@ -184,12 +190,13 @@
             </li>
           </ul>
         </div>
+        <a href="seller_add-bid.html" class="btn">Добавить заявку</a>
       </aside>
   
       <section class="settings-list">
         <form action="" id="settings__form" class="settings-list__form" method="POST">
           <div class="settings-list__item">
-            <div class="settings-box">
+            <div class="form-box">
               <h2 class="title">Учетная запись</h2>
               <label>Email:<input type="email" name="email" id="" required></label>
               <label>Никнейм:<input type="name" name="name" id="" required></label>
@@ -197,7 +204,7 @@
             </div>
           </div>
           <div class="settings-list__item">
-            <div class="settings-box">
+            <div class="form-box">
               <h2 class="title">Смена пароля</h2>
               <label>Старый Пароль:<input type="password" name="old-password" id=""></label>
               <label>Новый пароль:<input type="password" name="new-password" id=""></label>
@@ -205,7 +212,7 @@
             </div>
           </div>
           <div class="settings-list__item">
-            <div class="settings-box">
+            <div class="form-box">
               <h2 class="title">Уведомления</h2>
               <label class="chbx">
                 Включить уведомления о заявках на почту
@@ -223,7 +230,7 @@
                 <span></span>
               </label>
             </div>
-            <div class="settings-box city">
+            <div class="form-box city">
               <label>Город:<input type="text" name="city" id=""></label>
             </div>
           </div>

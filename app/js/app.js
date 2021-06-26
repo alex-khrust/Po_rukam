@@ -6,6 +6,12 @@
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
+// import Vue from 'vue'
+// import vSelect from 'vue-select'
+
+// Vue.component('v-select', vSelect)
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
 	// Custom JS
@@ -21,5 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	window.onscroll = function () {
 		progressBarScroll();
 	};
+
+
+
+	Vue.component('v-select', VueSelect.VueSelect)
+	new Vue({
+		el: 'main'
+	})
 
 })

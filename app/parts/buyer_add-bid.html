@@ -1,0 +1,59 @@
+<main class="cabinet buyer_add-bid">
+  <div class="container">
+    <div class="inner">
+      <div class="cabinet__header">
+        <h1 class="title">Cоздание заявки</h1>
+        <p class="subtitle">Что вы хотите купить</p>
+      </div>
+  
+      <section class="add-bid" id="app">
+        <h2 class="title">Заполните форму</h2>
+        <form action="" method="POST">
+          <fieldset class="form-box">
+            <label>
+              Название товара:
+              <input type="text" name="" id="" placeholder="Футбольный м`яч">
+            </label>
+            <label>
+              Город доставки:
+              <input type="text" name="" id="" placeholder="Одесса">
+            </label>
+            <label class="waiting-days">
+              Дата ожидания:
+              <div class="input-wrap">
+                <input type="number" name="waiting-days" id="" maxlength="2"><span>Дней</span>
+              </div>
+            </label>
+          </fieldset>
+          <fieldset class="form-box">
+            <label>
+              Категория:
+              <v-select :options="['1','2','3']"></v-select>
+            </label>
+            <label>
+              Способ доставки:
+              <v-select :options="['Укрпочта','Новая Почта']"></v-select>
+            </label>
+          </fieldset>
+          <fieldset class="form-box">
+            <label>
+              Максимальная цена:
+              <v-select :options="['100','200','300','400','500']"></v-select>
+            </label>
+            <label>
+              Способ оплаты:
+              <v-select :options="['Наличный расчет','Безналичный расчет']"></v-select>
+            </label>
+          </fieldset>
+        </form>
+        <fieldset>
+          <legend>Опишите то, что хотите купить</legend>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+      </section>
+
+    </div>
+
+  </div>
+</main>
+<!-- /buyer_add-bid -->
