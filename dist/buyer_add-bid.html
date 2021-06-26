@@ -152,9 +152,10 @@
         <p class="subtitle">Что вы хотите купить</p>
       </div>
   
-      <section class="add-bid">
+      <section class="add-bid" id="app">
+        <h2 class="title">Заполните форму</h2>
         <form action="" method="POST">
-          <div class="form-box">
+          <fieldset class="form-box">
             <label>
               Название товара:
               <input type="text" name="" id="" placeholder="Футбольный м`яч">
@@ -169,42 +170,32 @@
                 <input type="number" name="waiting-days" id="" maxlength="2"><span>Дней</span>
               </div>
             </label>
-          </div>
-          <div class="form-box">
+          </fieldset>
+          <fieldset class="form-box">
             <label>
-              Название товара:
-              <input type="text" name="" id="" placeholder="Футбольный м`яч">
-              <span></span>
+              Категория:
+              <v-select :options="['1','2','3']"></v-select>
             </label>
             <label>
-              Город доставки:
-              <input type="text" name="" id="" placeholder="Одесса">
-              <span></span>
+              Способ доставки:
+              <v-select :options="['Укрпочта','Новая Почта']"></v-select>
+            </label>
+          </fieldset>
+          <fieldset class="form-box">
+            <label>
+              Максимальная цена:
+              <v-select :options="['100','200','300','400','500']"></v-select>
             </label>
             <label>
-              Дата ожидания:
-              <input type="number" name="day" id="">
-              <span></span>
+              Способ оплаты:
+              <v-select :options="['Наличный расчет','Безналичный расчет']"></v-select>
             </label>
-          </div>
-          <div class="form-box">
-            <label>
-              Название товара:
-              <input type="text" name="" id="" placeholder="Футбольный м`яч">
-              <span></span>
-            </label>
-            <label>
-              Город доставки:
-              <input type="text" name="" id="" placeholder="Одесса">
-              <span></span>
-            </label>
-            <label>
-              Дата ожидания:
-              <input type="number" name="day" id="">
-              <span></span>
-            </label>
-          </div>
+          </fieldset>
         </form>
+        <fieldset>
+          <legend>Опишите то, что хотите купить</legend>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </fieldset>
       </section>
 
     </div>
@@ -316,6 +307,10 @@
     </div>
   </footer>
   <!-- /.footer -->
+
+  <!-- scripts -->
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://unpkg.com/vue-select@latest"></script>
   
   <script src="js/app.min.js"></script>
 
